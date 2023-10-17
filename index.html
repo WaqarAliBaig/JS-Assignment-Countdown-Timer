@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer & Stop Watch</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <!-- Countdown Timer -->
+    <h1>Countdown Timer</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Enter Date</th>
+          <th>Enter Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="date" id="date" /></td>
+          <td><input type="time" id="time" /></td>
+        </tr>
+      </tbody>
+    </table>
+    <button
+      type="button"
+      class="timer-btn timer-btn-start"
+      id="start"
+      onclick="startBtn()"
+    >
+      <span class="material-symbols-outlined">play_arrow</span>
+    </button>
+    <button
+      type="button"
+      class="timer-btn timer-btn-stop"
+      id="stop"
+      onclick="stopBtn()"
+    >
+      <span class="material-symbols-outlined"> stop_circle </span>
+    </button>
+    <button
+      type="button"
+      class="timer-btn timer-btn-reset"
+      id="reset"
+      onclick="resetBtn()"
+    >
+      <span class="material-symbols-outlined">timer</span>
+    </button>
+
+    <div class="timer">
+      <div>
+        <p class="text">DAY</p>
+        <div class="timer-part timer-part-days" id="count-days">00</div>
+      </div>
+      <div>
+        <p class="text">HOURS</p>
+        <div class="timer-part timer-part-hours" id="count-hours">00</div>
+      </div>
+      <div>
+        <p class="text">MINUTES</p>
+        <div class="timer-part timer-part-minutes" id="count-minutes">00</div>
+      </div>
+      <div>
+        <p class="text">SECONDS</p>
+        <div class="timer-part timer-part-seconds" id="count-seconds">00</div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

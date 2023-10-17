@@ -1,0 +1,58 @@
+body {
+  background: darkgray;
+  /* margin: 24px; */
+  text-align: center;
+  font-family: sans-serif;
+}
+
+table {
+  margin: auto;
+}
+
+input {
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+}
+
+.timer-part {
+  font-size: 100px;
+  font-weight: bold;
+  background-color: slategrey;
+  width: 150px;
+  margin: 0 10px;  
+}
+
+.timer-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-left: 16px;
+  border: none;
+  background: darkgray;
+  color: black;
+  cursor: pointer;
+}
+
+.timer-btn-start {
+  background: cadetblue;
+}
+
+.timer-btn-stop {
+  background: crimson;
+}
+
+.timer-btn-reset {
+  background: cornflowerblue;
+}
